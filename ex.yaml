@@ -1,0 +1,37 @@
+root_name:
+    # & - амперсанд
+    attribute1: "https://yaml.org/spec/1.2.2/" #This is comment
+    text2: This is text
+    pi: 3,14159
+    boolean_value: true #true/yes/1/y
+    boolean_value2: false #false/no/0/n
+    boolean_value3: yes
+    boolean_value4: no
+    array_value: &anchor1 #повесил якорь
+        - cat
+        - dog
+        - bird
+    array_value2: ["cat", "dog", "bird" ]
+    object_value:
+        attr1: "text value"
+        attr_num: 3
+    integers:
+        decimal: +12345 #десятичная
+        octal: 0o14 #восьмиричная
+        hexadecimal: 0xC #шестнадцатиричная
+    floating_point:
+        cannonical: 1.23424e+3
+        negative inf: -inf
+        positive inf: inf # /INF/inf
+        not a number: .nan
+        not a number2: .NaN
+        not a number3: .NAN
+    date:
+        ex1: 2002-12-14
+        not a date: !!str 2002-12-14
+    int1: !!int -12
+    int2: !!float -2 #примет как float
+    null value: null
+    with using anchor: *anchor1 #использования якоря
+    time: 22:22
+    tim2: 80:80

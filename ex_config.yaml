@@ -1,0 +1,27 @@
+    # Конфигурация
+
+    app:
+        name: Конфиг программы
+        version: "1.0"
+        debug: false
+        timeout_seconds: 2.5
+        email: null
+        
+    server:
+        host: "127.0.0.1"
+        port: 8080
+    
+    users: 
+        - name: "Anna"
+          role: admin
+          active: true
+        - { name: "Anton",
+           role: student,
+           active: false }
+    playground:
+        - color: "black"
+          size: 10
+          width: 120
+          height: 150
+          padding: 2
+    
